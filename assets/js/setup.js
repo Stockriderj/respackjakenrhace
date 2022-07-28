@@ -8,5 +8,3 @@ const navbar = `
 `;
 navbarEl.addClass("navbar bg-light");
 navbarEl.html(navbar);
-
-console.log("hello");
