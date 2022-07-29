@@ -6,4 +6,11 @@
 
 body {
     margin: 0;
+    font-size: 62.5%;
+
+    font-size: 1rem;
+}
+
+.article-paragraph {
+    text-indent: 3rem;
 }
