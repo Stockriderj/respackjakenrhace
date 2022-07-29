@@ -1,10 +1,21 @@
+if (window.rootpath != null) {
+  console.log("rootpath: " + window.rootpath);
+} else {
+  window.rootpath = "";
+  console.log("file in root folder");
+}
+
+function getImageFile(filename) {
+  return `${window.rootpath}assets/images/${filename}`;
+}
+
 // Head
 document.querySelector("head").innerHTML += `
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="${getImageFile("favicon")}">
+    <link rel="icon" type="image/png" sizes="32x32" href="${getImageFile("favicon/favicon-32x32.png")}">
+    <link rel="icon" type="image/png" sizes="16x16" href="${getImageFile("favicon/favicon-16.16")}">
+    <link rel="manifest" href="${getImageFile("favicon/site.webmanifest")}">
 
 `;
 
