@@ -5,12 +5,17 @@ if (window.rootpath != null) {
   console.log("file in root folder");
 }
 
+function getRootFile(filename) {
+  return `${window.rootpath}${filename}`;
+}
+
 function getImageFile(filename) {
   return `${window.rootpath}assets/images/${filename}`;
 }
 
 // Head
 document.querySelector("head").innerHTML += `
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="${getImageFile("favicon")}">
     <link rel="icon" type="image/png" sizes="32x32" href="${getImageFile("favicon/favicon-32x32.png")}">
     <link rel="icon" type="image/png" sizes="16x16" href="${getImageFile("favicon/favicon-16.16")}">
@@ -28,8 +33,9 @@ const navbar = `
     </a>
 
     <div class="navbar-nav">
-        <a class="nav-link" href="origin.html">Origin</a>
-        <a class="nav-link" href="language.html">Language</a>
+        <a class="nav-link" href="${getRootFile("blog.html")}">Blog</a>
+        <a class="nav-link" href="${getRootFile("origin.html")}">Origin</a>
+        <a class="nav-link" href="${getRootFile("language.html")}">Language</a>
     </div>
 
 </div>
