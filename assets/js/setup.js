@@ -34,8 +34,8 @@ const navbar = `
 
     <div class="navbar-nav">
         <a class="nav-link" href="${getRootFile("blog.html")}">Blog</a>
-        <a class="nav-link" href="${getRootFile("origin.html")}">Origin</a>
-        <a class="nav-link" href="${getRootFile("language.html")}">Language</a>
+        <a class="nav-link" href="${getRootFile("archives/origin.html")}">Origin</a>
+        <a class="nav-link" href="${getRootFile("archives/language.html")}">Language</a>
     </div>
 
 </div>
