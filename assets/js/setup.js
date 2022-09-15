@@ -27,7 +27,7 @@ const navbarEl = $("#main-header nav");
 const navbar = `
 <div class="container-fluid px-5">
 
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="${getRootFile("index.html")}">
         <img class="rounded-3 me-2" src="${getImageFile("respak-flag.jpeg")}" alt="Respackjakenrhace" width="10%">
         <span>Respackjakenrhace</span>
     </a>
