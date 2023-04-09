@@ -14,3 +14,11 @@ body {
 .article-paragraph {
     text-indent: 3rem;
 }
+
+.lang-acc-subheading {
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
